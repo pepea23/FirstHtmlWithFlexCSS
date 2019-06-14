@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    body {
+        background-color: #123;
+    }
+
+    span {
+        margin-right: 1rem;
+        text-align: center;
+    }
+
+    .flex-container {
+        position: sticky;
+        top: 0;
+    }
+
+    .nav-bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        background-color: #333;
+        border-radius: 25px;
+        justify-content: space-around;
+        display: flex;
+
+    }
+
+    .nav a {
+        display: flex;
+        color: white;
+        padding: 10px 10px;
+        text-decoration: none;
+        margin-left: 11rem;
+    }
+
+    .nav a:hover {
+        background-color: #111;
+        border-radius: 25px;
+    }
+   
+
+    .content-body {
+        max-width: 100%;
+        min-height: 100%;
+        border-radius: 25px;
+        background-color: #111;
+    }
+
+    .font-header {
+        margin: 0;
+        padding: 10px 0 10px 0;
+        text-align: center;
+        color: white;
+    }
+
+    .input-from {
+        color: white;
+        padding: 10px 0 10px 0;
+        text-align: center;
+    }
+
+    .form {
+        max-width: 100rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom:40px; 
+    }
+
+    .form-body {
+        border-radius: 25px;
+        background-color: #000;
+        padding: 1em 10em 1em 10em;
+        max-width: 200rem;
+        min-height: 15rem;
+        margin-top: 3.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .form-body:hover {
+        border-radius: 25px;
+        background-color: rgb(68, 54, 54);
+        box-shadow: 0 4px 8px 0 rgba(250, 115, 115, 0.2);
+
+    }
+
+    .conten-detail {
+        border-radius: 25px;
+        background-color: rgb(58, 52, 52);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        height: 1000px;
+    }
+
+    .products {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding-inline-start: 0%;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .product {
+        width: 200px;
+        height: 200px;
+        margin: 3px;
+        border-radius: 5px;
+        background: #1c1d22;
+
+    }
+
+    .product:hover {
+        box-shadow: 0 4px 8px 0 rgba(250, 115, 115, 0.2);
+        background: #292d41;
+    }
+
+    @media(min-width:321px) {
+        .product {
+            width: 300px;
+            height: 300px;
+            justify-content: center;
+
+        }
+    }
+
+    @media(min-width:425px) {
+        .product {
+            width: 270px;
+            height: 270px;
+        }
+
+        .products {
+            width: 80%;
+        }
+    }
+
+    @media(min-width:769px) {
+        .product {
+            width: 200px;
+            height: 200px;
+        }
+
+        .products {
+            justify-content: flex-start;
+            width: 100%;
+
+        }
+    }
+</style>
+
+<body>
+    <div>
+        <div class="flex-container">
+            <ul class="nav-bar">
+                <li class="nav"><a href="#">Home</a></li>
+                <li class="nav"><a href="#">Menu</a></li>
+                <li class="nav"><a href="#">About</a></li>
+                <ul>
+        </div>
+
+        <div class="content">
+            <div class="content-body">
+                <div class="form">
+                    <form class="form-body">
+                        <h2 class="font-header">Sign-Up </h2>
+                        <div class="input-from"><span>Username</span> <input type="text" required /></div>
+                        <div class="input-from"><span>Password </span><input type="password" required /></div>
+                        <div class="input-from" style="margin-left: 9%"><span>Email</span> <input type="email"
+                                required />
+                        </div>
+                        <div class="input-from"><input type="submit" requied /></div>
+                    </form>
+                </div>
+
+                <div class="conten-detail">
+                    <div class="products">
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                        <div class="product">
+                            <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
